@@ -348,8 +348,8 @@ void sysbusy_boost(void)
 	}
 
 	old_boost_duration = sysbusy.boost_duration;
-	if (busy_count >= (cpumask_weight(cpu_possible_mask) >> 1)) {
-		sysbusy.boost_duration = 250;	/* 250HZ == 1s*/
+	if (busy_count >= (cpumask_weight(cpu_possible_mask) >> 2)) {
+		sysbusy.boost_duration = 500;	/* 500HZ == 2s at HZ=250, 0.5s at HZ=1000 */
 		trace_ems_sysbusy_boost(1);
 	} else {
 		sysbusy.boost_duration = 0;
