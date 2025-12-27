@@ -3045,7 +3045,7 @@
 		gpu_thermal: G3D {
 			zone_name  = "G3D_THERMAL";
 			polling-delay-passive = <100>;
-			polling-delay = <0>;
+			polling-delay = <1000>;
 			thermal-sensors = <&tmuctrl_3>;
 			governor = "power_allocator";
 			sustainable-power = <0>;
@@ -3062,22 +3062,22 @@
 					type = "active";
 				};
 				gpu_switch_on: gpu-switch-on {
-					temperature = <78000>; /* millicelsius */
-					hysteresis = <2000>; /* millicelsius */
+					temperature = <80000>; /* millicelsius */
+					hysteresis = <3000>; /* millicelsius */
 					type = "active";
 				};
 				gpu_control_temp: gpu-control-temp {
-					temperature = <88000>; /* millicelsius */
+					temperature = <92000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "passive";
 				};
 				gpu_alert0: gpu-alert0 {
-					temperature = <105000>; /* millicelsius */
+					temperature = <108000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
 				gpu_alert1: gpu-alert1 {
-					temperature = <110000>; /* millicelsius */
+					temperature = <112000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
