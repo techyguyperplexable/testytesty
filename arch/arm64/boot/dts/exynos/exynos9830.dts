@@ -2834,8 +2834,8 @@
 	thermal-zones {
 		big_thermal: BIG {
 			zone_name  = "BIG_THERMAL";
-			polling-delay-passive = <50>;
-			polling-delay = <1000>;
+			polling-delay-passive = <100>;
+			polling-delay = <2000>;
 			thermal-sensors = <&tmuctrl_0>;
 			governor = "power_allocator";
 			sustainable-power = <0>;
@@ -2852,32 +2852,32 @@
 					type = "active";
 				};
 				big_switch_on: big-switch-on {
-					temperature = <55000>; /* millicelsius */
-					hysteresis = <2000>; /* millicelsius */
+					temperature = <60000>; /* millicelsius */
+					hysteresis = <3000>; /* millicelsius */
 					type = "active";
 				};
 				big_control_temp: big-control-temp {
-					temperature = <83000>; /* millicelsius */
+					temperature = <88000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "passive";
 				};
 				big_alert0: big-alert0 {
-					temperature = <95000>; /* millicelsius */
+					temperature = <98000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
 				big_alert1: big-alert1 {
-					temperature = <100000>; /* millicelsius */
+					temperature = <103000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
 				big_alert2: big-alert2 {
-					temperature = <105000>; /* millicelsius */
+					temperature = <108000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
 				big_alert3: big-alert3 {
-					temperature = <110000>; /* millicelsius */
+					temperature = <112000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
@@ -2897,8 +2897,8 @@
 
 		mid_thermal: MID {
 			zone_name  = "MID_THERMAL";
-			polling-delay-passive = <50>;
-			polling-delay = <1000>;
+			polling-delay-passive = <100>;
+			polling-delay = <2000>;
 			thermal-sensors = <&tmuctrl_1>;
 			governor = "power_allocator";
 			sustainable-power = <0>;
@@ -2915,32 +2915,32 @@
 					type = "active";
 				};
 				mid_switch_on: mid-switch-on {
-					temperature = <55000>; /* millicelsius */
-					hysteresis = <2000>; /* millicelsius */
+					temperature = <60000>; /* millicelsius */
+					hysteresis = <3000>; /* millicelsius */
 					type = "active";
 				};
 				mid_control_temp: mid-control-temp {
-					temperature = <83000>; /* millicelsius */
+					temperature = <88000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "passive";
 				};
 				mid_alert0: mid-alert0 {
-					temperature = <95000>; /* millicelsius */
+					temperature = <98000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
 				mid_alert1: mid-alert1 {
-					temperature = <100000>; /* millicelsius */
+					temperature = <103000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
 				mid_alert2: mid-alert2 {
-					temperature = <105000>; /* millicelsius */
+					temperature = <108000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
 				mid_alert3: mid-alert3 {
-					temperature = <110000>; /* millicelsius */
+					temperature = <112000>; /* millicelsius */
 					hysteresis = <5000>; /* millicelsius */
 					type = "active";
 				};
