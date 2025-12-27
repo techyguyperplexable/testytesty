@@ -837,9 +837,9 @@ static int __init inotify_user_setup(void)
 	inotify_inode_mark_cachep = KMEM_CACHE(inotify_inode_mark,
 					       SLAB_PANIC|SLAB_ACCOUNT);
 
-	inotify_max_queued_events = 16384;
-	init_user_ns.ucount_max[UCOUNT_INOTIFY_INSTANCES] = 128;
-	init_user_ns.ucount_max[UCOUNT_INOTIFY_WATCHES] = 8192;
+	inotify_max_queued_events = 32768;
+	init_user_ns.ucount_max[UCOUNT_INOTIFY_INSTANCES] = 256;
+	init_user_ns.ucount_max[UCOUNT_INOTIFY_WATCHES] = 65536;
 
 	return 0;
 }
