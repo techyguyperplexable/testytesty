@@ -2763,8 +2763,8 @@
 		sensors = <62>;	/* 0x3E */
 		sensing_mode = "balance";
 		hotplug_enable = <1>;
-		hotplug_in_threshold = <91>;
-		hotplug_out_threshold = <96>;
+		hotplug_in_threshold = <95>;
+		hotplug_out_threshold = <100>;
 		#thermal-sensor-cells = <0>;
 	};
 
