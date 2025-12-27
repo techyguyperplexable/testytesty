@@ -64,7 +64,7 @@ unsigned int vdd_cpucl0_uud_lut_params[] = {
 	175000, 0,
 };
 unsigned int vdd_cpucl1_sod_lut_params[] = {
-	2600000,
+	3300000,  /* Overclocked to 3.3GHz */
 };
 unsigned int vdd_cpucl1_od_lut_params[] = {
 	1950000,

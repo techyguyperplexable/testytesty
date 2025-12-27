@@ -459,8 +459,8 @@ static int vclk_get_dfs_info(struct vclk *vclk)
 		vclk->max_freq = minmax_table[MINMAX_MAX_FREQ] * 1000;
 	}
 
-	if (!strcmp(vclk->name, "CPUCL2") && vclk->max_freq < 2964000)
-		vclk->max_freq = 2964000;
+	if (!strcmp(vclk->name, "CPUCL2") && vclk->max_freq < 3321000)
+		vclk->max_freq = 3321000;
 	if (!strcmp(vclk->name, "CPUCL1") && vclk->max_freq < 2808000)
 		vclk->max_freq = 2808000;
 

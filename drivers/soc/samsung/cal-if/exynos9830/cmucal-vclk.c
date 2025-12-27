@@ -3501,7 +3501,7 @@ struct vclk_lut cmucal_vclk_vdd_cpucl0_lut[] = {
 	{175000, vdd_cpucl0_uud_lut_params},
 };
 struct vclk_lut cmucal_vclk_vdd_cpucl1_lut[] = {
-	{2600000, vdd_cpucl1_sod_lut_params},
+	{3300000, vdd_cpucl1_sod_lut_params},  /* Overclocked to 3.3GHz */
 	{1950000, vdd_cpucl1_od_lut_params},
 	{1550000, vdd_cpucl1_nm_lut_params},
 	{1000000, vdd_cpucl1_ud_lut_params},
@@ -3751,7 +3751,7 @@ struct vclk_lut cmucal_vclk_blk_cpucl0_lut[] = {
 	{400000, blk_cpucl0_uud_lut_params},
 };
 struct vclk_lut cmucal_vclk_blk_cpucl1_lut[] = {
-	{2600000, blk_cpucl1_sod_lut_params},
+	{3300000, blk_cpucl1_sod_lut_params},  /* Overclocked to 3.3GHz */
 	{1950000, blk_cpucl1_od_lut_params},
 	{1550000, blk_cpucl1_nm_lut_params},
 	{1000000, blk_cpucl1_ud_lut_params},
