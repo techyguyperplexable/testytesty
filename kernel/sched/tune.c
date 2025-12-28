@@ -125,9 +125,9 @@ static inline struct schedtune *parent_st(struct schedtune *st)
  */
 static struct schedtune
 root_schedtune = {
-	.boost	= 10,
-	.prefer_idle = 1,
-	.prefer_perf = 1,
+	.boost	= 0,
+	.prefer_idle = 0,
+	.prefer_perf = 0,
 };
 
 /*
